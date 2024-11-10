@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TheMovieDB System</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/f1c4a41191.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <h3>TheMovieDB Search</h3>
+      <nav>
+        <button id="popularButton">Popular</button>
+        <button id="bookmarksButton">Bookmarks</button>
+      </nav>
+      <div>
+        <form>
+          <label for="search">Find a movie</label>
+          <input name="search" id="search" type="text" placeholder="Search" />
+        </form>
+      </div>
+    </header>
+    <h4 id="info"></h4>
+    <div id="app"></div>
+    <div class="loader" id="loader"></div>
+    <button onclick="movies.loadMore()" id="loadMoreButton">
+      Load more...
+    </button>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
